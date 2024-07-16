@@ -1,4 +1,5 @@
 function init() {
+    setTimeout(() => {
     document.body.insertAdjacentHTML(
         'beforeend',
         [
@@ -7,6 +8,7 @@ function init() {
             '</div>',
         ].join('')
     );
+    }, 1000)
 }
 
 window.addEventListener('load', init, false);
